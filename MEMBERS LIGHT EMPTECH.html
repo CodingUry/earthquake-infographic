@@ -126,8 +126,18 @@ nav .nav-bar .nav-bar_item a:hover:after {
 			height: 700px;  
 			padding: 20px;
 			border: 8px solid red;
-			background-color: #ffe4e1;
+			background-image: #ffe4e1;
+			animation-name: cardfemale;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
 		  }
+		  
+		  @keyframes cardfemale {
+            from {background-color: #ffe4e1;}
+            to {background-color: #F89880;}
+          }
 		  
 		   .member-cardmale {
 			width: 1000px;
@@ -135,7 +145,17 @@ nav .nav-bar .nav-bar_item a:hover:after {
 			padding: 20px;
 			border: 8px solid blue;
 			background-color: #AFEEEE;
+			animation-name: cardmale;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
 		  }
+		  
+		  	@keyframes cardmale {
+            from {background-color: #AFEEEE;}
+            to {background-color: #30D5C8;}
+          }
 </style>
 </head>
 <body>
