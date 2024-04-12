@@ -136,8 +136,18 @@ nav .nav-bar .nav-bar_item a:hover:after {
 			height: 700px;  
 			padding: 20px;
 			border: 8px solid red;
-			background-color: #ffe4e1;
+			background-image: #ffe4e1;
+			animation-name: cardfemale;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
 		  }
+		  
+		  @keyframes cardfemale {
+            from {background-color: #ffe4e1;}
+            to {background-color: #F89880;}
+          }
 		  
 		   .member-cardmale {
 			width: 1000px;
@@ -145,7 +155,17 @@ nav .nav-bar .nav-bar_item a:hover:after {
 			padding: 20px;
 			border: 8px solid blue;
 			background-color: #AFEEEE;
+			animation-name: cardmale;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
 		  }
+		  
+		  	@keyframes cardmale {
+            from {background-color: #AFEEEE;}
+            to {background-color: #30D5C8;}
+          }
 </style>
 </head>
 <body>
@@ -153,13 +173,13 @@ nav .nav-bar .nav-bar_item a:hover:after {
 <nav>
 	<a class="logo" href="https://www.feu.edu.ph"><img src="https://codingury.github.io/logo.png" style="height:100%; width:80%;"></a>
 	<ul class="nav-bar">
-		<li class="nav-bar_item"><a href="EmpTech PETA DARK.html">home</a></li>
+		<li class="nav-bar_item"><a href="index.html">home</a></li>
 		<li class="nav-bar_item"><a href="#">Members</a></li>
 		<li class="nav-bar_item dropdown">
 			<a href="#">Themes</a>
 			<ul class="project">
-				<li class="drop-item"><a href="MEMBERS LIGHT EMPTECH.html">Light</a></li>
-				<li class="drop-item"><a href="#">Dark</a></li>
+				<li class="drop-item"><a href="#">Light</a></li>
+				<li class="drop-item"><a href="Members EMPTECH PETA.html">Dark</a></li>
 			</ul>
 		</li>
     </ul>
