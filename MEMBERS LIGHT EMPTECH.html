@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Members</title>
+<link rel="stylesheet" type="text/css" href="Moonrising.css">
+<style>
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.spacer {width: 100%; height: 100px;}
+
+body {font-family: "Open Sans", sans-serif;}
+
+
+nav {
+	width: 100%; 
+	background-color: #404040; 
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	padding: 0px; 
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+nav .nav-bar {
+	padding: 20px; 
+	display: flex; 
+}
+nav .nav-bar .nav-bar_item {
+	list-style-type: none;
+	padding: 0px 20px;
+
+}
+nav .nav-bar .dropdown {
+	position: relative;
+}
+nav .nav-bar .dropdown:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 7px;
+	height: 7px;
+	cursor: pointer;
+	transform: rotate(-45deg);
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover:after{
+	transform: rotate(135deg);
+}
+nav .nav-bar .dropdown .project {
+	position: absolute;
+	transform: translateX(-20px) translateY(5px);
+	width: 110px;
+	background-color: #707070;
+	padding: 20px;
+	border-radius: 10px;
+	height: 0px;
+	overflow: hidden;
+	visibility: hidden;
+	transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover .project{
+	height: 90px;
+	
+	visibility: visible;
+}
+
+nav .nav-bar .dropdown .project .drop-item {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+nav .nav-bar .nav-bar_item a {
+	position: relative;
+	display; block; 
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+nav .nav-bar .nav-bar_item a:after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transition: 0.1s ease-in-out;
+}
+nav .nav-bar .nav-bar_item a:hover:after {
+	width: 100%;
+}
+		
+        .footer {
+            position:absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+		    height: 45px;
+			padding:5px;
+            background-color: #404040;
+            color: white;
+			text-align: center;
+        }
+		
+        .main-content {
+            margin-top: 60px;
+            padding: 20px;
+            justify-content: center;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;  
+            animation-fill-mode: both;
+          }
+
+          @keyframes example {
+            from {left: -2000px; background-blend-mode: lighten;}
+            to {left: 420px; background-blend-mode: normal;}
+          }
+		  
+		  .member-cardfemale {
+			width: 1000px;
+			height: 700px;  
+			padding: 20px;
+			border: 8px solid red;
+			background-color: #ffe4e1;
+		  }
+		  
+		   .member-cardmale {
+			width: 1000px;
+			height: 700px;  
+			padding: 20px;
+			border: 8px solid blue;
+			background-color: #AFEEEE;
+		  }
+</style>
+</head>
+<body>
+<header>
+<nav>
+	<a class="logo" href="https://www.feu.edu.ph"><img src="https://codingury.github.io/logo.png" style="height:100%; width:80%;"></a>
+	<ul class="nav-bar">
+		<li class="nav-bar_item"><a href="index.html">home</a></li>
+		<li class="nav-bar_item"><a href="#">Members</a></li>
+		<li class="nav-bar_item dropdown">
+			<a href="#">Themes</a>
+			<ul class="project">
+				<li class="drop-item"><a href="#">Light</a></li>
+				<li class="drop-item"><a href="Members EMPTECH PETA.html">Dark</a></li>
+			</ul>
+		</li>
+    </ul>
+</nav>
+</header>
+
+    <div class="main-content">
+	<div class="member-cardfemale"><br><h1><b>NAME:</b> Crisha Mae E. Coquia</h1><br><h1><b>STUDENT NUMBER: </b>2023900740</h1><br><h1><b>AGE: </b></h1></div>
+	<br>
+	<div class="member-cardmale"><img src="https://codingury.github.io/renzo.png" style="height:60%; width:44%;"><br><h1><b>NAME:</b> Renzo Raphael M. Moleta</h1><br><h1><b>STUDENT NUMBER: </b>2023900667</h1><br><h1><b>HOBBIES: </b>Playing Badminton & Volleyball</h1><br><h1><b>INTERESTS: </b>Reading Novels</h1><br><h1><b>AGE: </b>16</h1></div>
+	<br>
+	<div class="member-cardfemale"><img src="https://codingury.github.io/krizelle.png" style="height:60%; width:44%;"><br><h1><b>NAME:</b> Krizelle D. Mangaoil</h1><br><h1><b>STUDENT NUMBER: </b>2023901402</h1><br><h1><b>HOBBIES: </b>Cooking</h1><br><h1><b>INTERESTS: </b>Playing video games</h1><br><h1><b>AGE: </b>17</h1></div>
+	<br>
+	<div class="member-cardmale"><img src="https://jimdo-storage.freetls.fastly.net/image/417667936/a98eea93-e9f5-40b3-b0aa-bbf5c9b8c5fe.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=320&height=320&trim=9,0,8,0"><br><h1><b>NAME:</b> Uriel Zion A. Tinoy</h1><br><h1><b>STUDENT NUMBER: </b>2023900723</h1><br><h1><b>HOBBIES: </b>PLaying video games</h1><br><h1><b>INTERESTS: </b>Anything related to cars and computers</h1><br><h1><b>AGE: </b>16</h1></div>
+	</div>
+<footer>
+  <div class="footer">
+    <center><h2 class="footer-title">Made by Group 1</h2></center>
+  </div>
+</footer>
+</body>
+</html>

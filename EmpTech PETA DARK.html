@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Main Article</title>
+<link rel="stylesheet" type="text/css" href="Moonrising.css">
+<style>
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.spacer {width: 100%; height: 100px;}
+
+body {font-family: "Open Sans", sans-serif; background-color: black;}
+
+		.background {
+            background-image: url('https://img.freepik.com/free-vector/cute-pattern-background-polka-dot-black-white-vector_53876-151294.jpg');
+            background-color: rgba(255, 255, 255, 0.6);
+            background-position: center;
+            background-size: cover;;
+			background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+            
+		}
+
+nav {
+	width: 100%; 
+	background-color: #404040; 
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	padding: 0px; 
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+nav .nav-bar {
+	padding: 20px; 
+	display: flex; 
+}
+nav .nav-bar .nav-bar_item {
+	list-style-type: none;
+	padding: 0px 20px;
+
+}
+nav .nav-bar .dropdown {
+	position: relative;
+}
+nav .nav-bar .dropdown:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 7px;
+	height: 7px;
+	cursor: pointer;
+	transform: rotate(-45deg);
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover:after{
+	transform: rotate(135deg);
+}
+nav .nav-bar .dropdown .project {
+	position: absolute;
+	transform: translateX(-20px) translateY(5px);
+	width: 110px;
+	background-color: #707070;
+	padding: 20px;
+	border-radius: 10px;
+	height: 0px;
+	overflow: hidden;
+	visibility: hidden;
+	transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover .project{
+	height: 90px;
+	
+	visibility: visible;
+}
+
+nav .nav-bar .dropdown .project .drop-item {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+nav .nav-bar .nav-bar_item a {
+	position: relative;
+	display; block; 
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+nav .nav-bar .nav-bar_item a:after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transition: 0.1s ease-in-out;
+}
+nav .nav-bar .nav-bar_item a:hover:after {
+	width: 100%;
+}
+		
+        .footer {
+            position:absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+		    height: 45px;
+			padding:5px;
+            background-color: #404040;
+            color: white;
+			text-align: center;
+        }
+		
+        .main-content {
+            margin-top: 80px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;  
+            animation-fill-mode: both;
+          }
+
+          @keyframes example {
+            from {left: -2000px; background-blend-mode: lighten;}
+            to {left: 0px; background-blend-mode: normal;}
+          }
+</style>
+</head>
+<body>
+<header>
+<nav>
+	<a class="logo" href="https://www.feu.edu.ph"><img src="https://codingury.github.io/logo.png" style="height:100%; width:80%;"></a>
+	<ul class="nav-bar">
+		<li class="nav-bar_item"><a href="#">home</a></li>
+		<li class="nav-bar_item"><a href="Members EMPTECH PETA.html">Members</a></li>
+		<li class="nav-bar_item dropdown">
+			<a href="#">Themes</a>
+			<ul class="project">
+				<li class="drop-item"><a href="index.html">Light</a></li>
+				<li class="drop-item"><a href="#">Dark</a></li>
+			</ul>
+		</li>
+    </ul>
+</nav>
+</header>
+
+
+
+    <div class="main-content">
+        <div class="center-content">
+            <div style="max-width:1000px; word-wrap:break-word; color:white;"><h1>WHAT TO DO IN AN EARTHQUAKE<br><br></h1></div>
+            <div style="max-width:1000px; word-wrap:break-word; color:white;">Earthquakes, a common natural disaster worldwide, are caused by a sudden release of energy on Earth's crust, resulting in seismic waves that can cause significant damage. The aftermath can be devastating, with secondary effects such as landslides, tsunamis, and building collapses leading to considerable casualties. Given the unpredictability, and potential devastation of earthquakes, it's crucial for everyone, regardless of where they live, to be prepared. This guide will provide comprehensive advice on what to do before, during, and after an earthquake,  applicable to any location worldwide<br><br></div>
+            <div style="color:white; max-width:1000px; word-wrap:break-word; color:white;"><p>With that said, here are the things you need to do to survive an earthquake:<br><br></p></div>
+
+	    <div style="max-width:1000px; word-wrap:break-word;"><img src="https://codingury.github.io/INFOGRAPH.png" style="width:100%;"><br><br></div>
+        <div style="max-width:1000px; word-wrap:break-word;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p></div>
+       </div>
+    </div>
+
+<footer>
+  <div class="footer">
+    <center><h2 class="footer-title">Made by Group 1</h2></center>
+  </div>
+</footer>
+</body>
+</html>
